@@ -8,6 +8,7 @@ public class Cuentas {
     private String titular;
     private float saldo;
     private int numero;
+    private String tipoCuenta = "Corriente";
     protected ArrayList<Movimientos> movimientos = new ArrayList<>();
 
     //Contructor con sólo titular y número.
@@ -48,6 +49,14 @@ public class Cuentas {
 
     public void setNumero(int numero) {
         this.numero = numero;
+    }
+
+    public String getTipoCuenta() {
+        return tipoCuenta;
+    }
+
+    public void setTipoCuenta(String tipoCuenta) {
+        this.tipoCuenta = tipoCuenta;
     }
 
     public ArrayList<Movimientos> getMovimientos() {

@@ -1,6 +1,7 @@
 package movimientos;
 
 import cuentas.CuentaCorriente;
+import cuentas.Cuentas;
 
 public class Movimientos {
 
@@ -8,10 +9,10 @@ public class Movimientos {
     private int tipo;
     private String fecha;
     private int monto;
-    private CuentaCorriente cuenta;
+    private Cuentas cuenta;
 
     //Contructor.
-    public Movimientos(int tipo, String fecha, int monto, CuentaCorriente cuenta) {
+    public Movimientos(int tipo, String fecha, int monto, Cuentas cuenta) {
         this.tipo = tipo;
         this.fecha = fecha;
         this.monto = monto;
@@ -51,7 +52,7 @@ public class Movimientos {
     }
 
     //Método get para atributo 'cuenta'.
-    public CuentaCorriente getCuenta() {
+    public Cuentas getCuenta() {
         return cuenta;
     }
 

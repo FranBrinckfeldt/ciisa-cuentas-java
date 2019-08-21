@@ -11,24 +11,14 @@ package cuentas;
  */
 public class CuentaCorriente extends Cuentas {
 
-    private String tipoCuenta = "Corriente";
-
     public CuentaCorriente(String titular, int numero) {
         super(titular, numero);
-        this.tipoCuenta = tipoCuenta;
+        setTipoCuenta("Corriente");
     }
 
     public CuentaCorriente(String titular, int numero, float saldo) {
         super(titular, numero, saldo);
-        this.tipoCuenta = tipoCuenta;
-    }
-
-    public String getTipoCuenta() {
-        return tipoCuenta;
-    }
-
-    public void setTipoCuenta(String tipoCuenta) {
-        this.tipoCuenta = tipoCuenta;
+        setTipoCuenta("Corriente");
     }
 
     @Override

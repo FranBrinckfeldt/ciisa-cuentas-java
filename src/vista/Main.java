@@ -6,8 +6,8 @@
 package vista;
 
 import cuentas.CuentaCorriente;
+import cuentas.Cuentas;
 import movimientos.Movimientos;
-
 import java.util.Date;
 import java.text.SimpleDateFormat;
 
@@ -18,10 +18,11 @@ import java.text.SimpleDateFormat;
 public class Main {
     public static void main(String[] args) {
 
-        //Instancias de clase CuentaCorriente.
-        CuentaCorriente cuenta33 = new CuentaCorriente("Francisca", 33);
-        CuentaCorriente cuenta67 = new CuentaCorriente("Melanie", 67, 80000);
-        CuentaCorriente cuenta80 = new CuentaCorriente("Camila", 80, 100000);
+        //Instancias de clase Cuentas.
+
+        Cuentas cuenta33 = new CuentaCorriente("Francisca", 33);
+        Cuentas cuenta67 = new CuentaCorriente("Melanie", 67, 80000);
+        Cuentas cuenta80 = new CuentaCorriente("Camila", 80, 100000);
 
         Date date = new Date();
         SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
